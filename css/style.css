@@ -1,0 +1,347 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.section1{
+    width: 100%;
+    height: 250px;
+    background-color:  #DFEAF7;
+    margin-top: 15px;
+}
+.section1 h1 {
+    text-align: center;
+    text-shadow: 2px 2px yellow;
+    padding-top: 15px;
+    font-size: 32px;
+}
+
+.effect1 {
+    position: absolute;
+    top: 22%;
+    transform: translateY(-50%);
+    width: 100%;
+    text-align: center;
+}
+
+.btn {
+    display: inline-block;
+    width: 90px;
+    height: 90px;
+    background: #f1f1f1;
+    margin: 10px;
+    border-radius: 30%;
+    box-shadow: 0 5px 15px -5px #00000070;
+    color: #3498db;
+    overflow: hidden;
+    position: relative;
+}
+
+.btn i {
+    line-height: 90px;
+    font-size: 26px;
+    transition: 0.2s linear;
+}
+
+.btn:hover i {
+    transform: scale(1.3);
+    color: #f1f1f1;
+}
+
+.btn::before {
+    content: '';
+    position: absolute;
+    width: 120%;
+    height: 120%;
+    background: #3498db;
+    transform: rotate(45deg);
+    left: -110%;
+    top: 90%;
+}
+
+.btn:hover::before {
+    animation: aaa 0.7s 1;
+    top: -10%;
+    left: -10%;
+}
+
+@keyframes aaa {
+    0% {
+        left: -110%;
+        top: 90%;
+    }
+
+    50% {
+        left: 10%;
+        top: -30%;
+    }
+
+    100% {
+        top: -10%;
+        left: -10%;
+    }
+}
+
+/*---------------------------------------------------------Icon Hover Effect 2 --------------------------------------------------------*/
+.section2{
+    width: 100%;
+    height: 250px;
+    background-color:  #DFEAF7;
+    margin-top: 15px;
+}
+.section2 h1 {
+    text-align: center;
+    text-shadow: 2px 2px yellow;
+    padding-top: 20px;
+    font-size: 32px;
+}
+.effect2 {
+    position: absolute;
+    top: 60%;
+    transform: translateY(-50%);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.effect2 h1 {
+    text-shadow: 2px 2px yellow;
+    top: -50%;
+    position: absolute;
+    text-align: center;
+
+}
+
+.effect2 ul li {
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+    list-style: none;
+    border: 2px solid #2e86de;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.effect2 ul {
+    display: flex;
+}
+
+.effect2 ul li i {
+    color: #2e86de;
+}
+
+.effect2 ul li::before {
+    content: '';
+    position: absolute;
+    width: inherit;
+    height: inherit;
+    background-color: #2e86de;
+    border-radius: 50%;
+    transition: all 0.3s linear;
+    z-index: -1;
+    opacity: 0;
+}
+
+.effect2 ul li:hover::before {
+    transform: scale(0.8);
+    opacity: 1;
+}
+
+.effect2 ul li:hover i {
+    color: white;
+}
+
+/*---------------------------------------------------------- Icon hover effect 3 ----------------------------------------------------------*/
+.section3{
+    width: 100%;
+    height: 300px;
+    background-color: #bccfe7;
+    margin-top: 15px;
+}
+.section3 h1{
+    text-align: center;
+    padding-top: 50px;
+    text-shadow: 2px 2px yellow;
+    font-size: 32px;
+}
+.effect3{
+    padding-top: 50px;
+}
+.effect3 ul{
+    display: flex;
+    list-style: none;
+    align-items: center;
+    justify-content: center;
+}
+.effect3 ul li{
+    width: 100px;
+    height: 100px;
+    line-height: 100px;
+    margin: 0 10px;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 50%;
+    border:  5px solid #fff;
+    transition: all 0.5s ease;
+     
+}
+.effect3 ul li .btn2{
+color: #fff;
+margin-top: 20px;
+transition: all 0.5s ease;
+
+}
+.effect3 ul li:hover:nth-child(1){
+    border: 5px solid #3b5998;
+    box-shadow: 0 0 15px #3b5998;
+    transition: all 0.5s ease;
+}
+.effect3 ul li:hover .fa-facebook-f{
+    color: #3b5998;
+    text-shadow: 0 0 15px #3b5998;
+    transition: all 0.5s ease;
+}
+.effect3 ul li:hover:nth-child(2){
+    border: 5px solid #00aced;
+    box-shadow: 0 0 15px #00aced;
+}
+.effect3 ul li:hover .fa-twitter{
+    color: #00aced;
+    text-shadow: 0 0 15px #00aced;
+    transition: all 0.5s ease;
+}
+.effect3 ul li:hover:nth-child(3){
+    border: 5px solid #bc2a8d;
+    box-shadow: 0 0 15px #bc2a8d;
+}
+.effect3 ul li:hover .fa-instagram{
+    color: #bc2a8d;
+    text-shadow: 0 0 15px #bc2a8d;
+    transition: all 0.5s ease;
+}
+.effect3 ul li:hover:nth-child(4){
+    border: 5px solid #dd4b39;
+    box-shadow: 0 0 15px #dd4b39;
+}
+.effect3 ul li:hover .fa-google{
+    color: #dd4b39;
+    text-shadow: 0 0 15px #dd4b39;
+    transition: all 0.5s ease;
+}
+.effect3 ul li:hover:nth-child(5){
+    border: 5px solid #007bb6;
+    box-shadow: 0 0 15px #007bb6;
+}
+.effect3 ul li:hover .fa-linkedin-in{
+    color: #007bb6;
+    text-shadow: 0 0 15px #007bb6;
+    transition: all 0.5s ease;
+}
+/*-------------------------------------------------------Icon Hover Effect 4-------------------------------------------------------------- */
+.section4{
+    width: 100%;
+    height: 300px;
+    background-color: #DFEAF7;
+    margin-top: 15px;
+}
+.section4 h1{
+    text-align: center;
+    padding-top: 50px;
+    text-shadow: 2px 2px yellow;
+    font-size: 32px;
+}
+.effect4{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin-top: -11%;
+}
+.effect4 a{
+    display: flex;
+    background-color: #e3edf7;
+    width: 75px;
+    height: 75px;
+    margin: 0 15px;
+    border-radius: 8px;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    box-shadow: 6px 6px 10px -1px rgba(0,0,0,0.15),-6px -6px 10px -1px rgba(255,255,255,0.7);
+    border: 1px solid rgba(0,0,0,0);
+    transition: transfor 0.5s;
+}
+.effect4 a i{
+    font-size: 35px;
+    color: #777;
+    transition: transform 0.5s;
+}
+.effect4 a:hover{
+    box-shadow: inset 4px 4px 6px -1px rgba(0,0,0,0.2), inset -4px -4px 6px -1px rgba(255,255,255,0.7),-0.5px -0.5px 0px rgba(255,255,255,1),0.5px 0.5px 0px rgba(0,0,0,0.15),0px 12px 10px -10px rgba(0,0,0,0.5);
+    border: 1px solid rgba(0,0,0,0.1);
+    transform: translateY(2px );
+}
+.effect4 a:hover i{
+    transform: scale(0.9);
+}
+.effect4 a:hover .fa-facebook-f{
+    color: #3b5998;
+}
+.effect4 a:hover .fa-twitter{
+    color: #00aced;
+}
+.effect4 a:hover .fa-instagram{
+    color: #bc2a8d;
+}
+.effect4 a:hover .fa-google{
+    color: #dd4b39;
+}
+.effect4 a:hover .fa-linkedin-in
+{
+    color: #007bb6;
+}
+/* -----------------------------------------------------Icon Hover Effect 5 -------------------------------------------------------------*/
+.section5{
+    width: 100%;
+    height: 300px;
+    background-color: #DFEAF7;
+    margin-top: 8%;
+}
+.section5 h1{
+    text-align: center;
+    padding-top: 50px;
+    text-shadow: 2px 2px yellow;
+    font-size: 32px;
+}
+.effect5{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 3%;
+}
+.effect5 a{
+    display: inline-flex;
+    width: 100px;
+    height: 100px;
+    background: #2c3e50;
+    color: white;
+    margin: 0 6px;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    transition: 0.4s;
+    text-decoration: none;
+    font-size: 40px;
+}
+.effect5 a:hover{
+    background: #e67e22;
+}
+.effect5 a i{
+    transition: 0.4s all;
+}
+.effect5 a:hover > i{
+    transform: scale(1.6) rotate(25deg);
+}
